@@ -509,4 +509,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Working Project/Unity Practice/MultiBuild/MultiplayerMidterm.exe
+  playerPath: E:/Working Project/Unity Practice/MultiplayerMidterm/Build/GuessNumberMidterm.exe
