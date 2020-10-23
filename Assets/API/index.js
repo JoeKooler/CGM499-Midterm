@@ -1,9 +1,7 @@
-var express = require('express');
 var socketIO = require('socket.io');
 const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var app = express();
 var io = socketIO(8888);
 
 const getRandomInt = (min, max) => {
