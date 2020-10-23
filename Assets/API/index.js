@@ -1,11 +1,11 @@
-var socketIO = require("socket.io");
+const socketIO = require("socket.io");
 const mongoose = require("mongoose");
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var io = socketIO(8888);
+const io = socketIO(8888);
 
 const getRandomInt = (min, max) => {
-  var tempVal = 0;
+  let tempVal = 0;
   min = Math.ceil(min);
   max = Math.floor(max);
   tempVal = Math.floor(Math.random() * (max - min)) + min;
@@ -13,14 +13,14 @@ const getRandomInt = (min, max) => {
   return tempVal;
 };
 
-var randomNum = getRandomInt(1, 100);
+let randomNum = getRandomInt(1, 100);
 
 mongoose.connect("mongodb://localhost:27017/unity", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-var UserSchema = new Schema({
+const UserSchema = new Schema({
   name: { type: String },
   score: { type: Number },
 });
